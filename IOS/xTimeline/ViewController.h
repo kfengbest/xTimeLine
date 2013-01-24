@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <UIKit/UIImagePickerController.h>
 
-@interface ViewController : UIViewController
+
+@interface ViewController : UIViewController<UINavigationControllerDelegate,UIImagePickerControllerDelegate>
+{
+    UIScrollView* mainScrollView;
+}
+
+@property(nonatomic, strong) UIScrollView* mainScrollView;
+
+- (IBAction)onTakePhoto:(id)sender;
 
 @end
