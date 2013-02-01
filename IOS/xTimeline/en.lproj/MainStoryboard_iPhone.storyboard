@@ -9,7 +9,7 @@
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Img-guide-496x602.png" translatesAutoresizingMaskIntoConstraints="NO" id="LjP-Vq-7Pb"/>
@@ -39,7 +39,7 @@
             <objects>
                 <viewController id="JsJ-zy-Qyy" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LrL-fM-Xdb">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KzO-zu-dpX">
@@ -99,15 +99,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="lXi-Nb-NZi" firstAttribute="top" secondItem="LrL-fM-Xdb" secondAttribute="top" constant="129" id="4RX-Vg-GCt"/>
                             <constraint firstItem="Jcd-p2-sDV" firstAttribute="leading" secondItem="lXi-Nb-NZi" secondAttribute="leading" type="default" id="4qq-Wk-1Rk"/>
                             <constraint firstItem="Jcd-p2-sDV" firstAttribute="trailing" secondItem="lXi-Nb-NZi" secondAttribute="trailing" type="default" id="516-ST-zHR"/>
                             <constraint firstItem="b6g-4r-3hs" firstAttribute="leading" secondItem="KzO-zu-dpX" secondAttribute="leading" type="default" id="6Uc-w1-fyQ"/>
                             <constraint firstItem="KzO-zu-dpX" firstAttribute="leading" secondItem="LrL-fM-Xdb" secondAttribute="leading" constant="4" id="837-Rl-1tk"/>
-                            <constraint firstItem="KzO-zu-dpX" firstAttribute="top" secondItem="LrL-fM-Xdb" secondAttribute="top" constant="130" id="QOd-Ia-nzi"/>
-                            <constraint firstAttribute="trailing" secondItem="Jcd-p2-sDV" secondAttribute="trailing" constant="5" id="TlN-98-78a"/>
+                            <constraint firstAttribute="trailing" secondItem="lXi-Nb-NZi" secondAttribute="trailing" constant="5" id="Ree-9j-Snb"/>
                             <constraint firstItem="Jcd-p2-sDV" firstAttribute="top" secondItem="lXi-Nb-NZi" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="WVV-hn-jrg"/>
+                            <constraint firstItem="lXi-Nb-NZi" firstAttribute="top" secondItem="LrL-fM-Xdb" secondAttribute="top" constant="90" id="awU-uJ-y6O"/>
                             <constraint firstItem="b6g-4r-3hs" firstAttribute="top" secondItem="KzO-zu-dpX" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ecB-XN-meu"/>
+                            <constraint firstItem="KzO-zu-dpX" firstAttribute="top" secondItem="LrL-fM-Xdb" secondAttribute="top" constant="91" id="fsQ-vr-jUs"/>
                             <constraint firstItem="b6g-4r-3hs" firstAttribute="trailing" secondItem="KzO-zu-dpX" secondAttribute="trailing" type="default" id="wg3-Si-ANx"/>
                         </constraints>
                     </view>
@@ -142,6 +142,7 @@
                 <navigationController id="HQr-fO-iH2" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="TimeLine" id="56L-E0-Eak"/>
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4eh-c8-P95">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -161,6 +162,7 @@
                 <tabBarController id="UL6-yr-HlJ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="bQi-yE-Fia">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
