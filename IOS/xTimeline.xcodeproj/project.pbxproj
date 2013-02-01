@@ -270,6 +270,7 @@
 				GCC_PREFIX_HEADER = "xTimeline/xTimeline-Prefix.pch";
 				INFOPLIST_FILE = "xTimeline/xTimeline-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -281,6 +282,7 @@
 				GCC_PREFIX_HEADER = "xTimeline/xTimeline-Prefix.pch";
 				INFOPLIST_FILE = "xTimeline/xTimeline-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -304,6 +306,7 @@
 				12BBFDFF16B137E300D091F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
