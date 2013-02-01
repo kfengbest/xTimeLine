@@ -7,6 +7,7 @@
 //
 
 #import "PublishingPhotoViewController.h"
+#import "TimelineViewerViewController.h"
 
 @interface PublishingPhotoViewController ()
 {
@@ -42,7 +43,12 @@
 
 - (IBAction)onPublishPhoto:(id)sender {
     
+    UIStoryboard* sb = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone"bundle:nil];
     
+    TimelineViewerViewController* viewerController = [sb instantiateViewControllerWithIdentifier:@"TimelineViewerViewController"];
+    
+    [self presentViewController:viewerController animated:YES completion:nil];
+
     
 }
 
