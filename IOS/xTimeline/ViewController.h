@@ -10,13 +10,11 @@
 #import <UIKit/UIImagePickerController.h>
 
 
-@interface ViewController : UIViewController<UINavigationControllerDelegate,UIImagePickerControllerDelegate>
+@interface ViewController : UIViewController
 {
-    UIScrollView* mainScrollView;
 }
 
 @property(nonatomic, strong) UIScrollView* mainScrollView;
 
-- (IBAction)onTakePhoto:(id)sender;
 
 @end

@@ -35,12 +35,40 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1114" y="153"/>
+            <point key="canvasLocation" x="66" y="241"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="hkc-KE-QGP">
+            <objects>
+                <viewController id="AgQ-r0-lf2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lw9-w0-ZIR">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f2R-JD-wjc">
+                                <items>
+                                    <navigationItem title="Title" id="a2x-AU-hyH"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="f2R-JD-wjc" firstAttribute="top" secondItem="lw9-w0-ZIR" secondAttribute="top" type="default" id="5G1-bL-b3b"/>
+                            <constraint firstItem="f2R-JD-wjc" firstAttribute="leading" secondItem="lw9-w0-ZIR" secondAttribute="leading" type="default" id="CPi-Kj-K3G"/>
+                            <constraint firstItem="f2R-JD-wjc" firstAttribute="trailing" secondItem="lw9-w0-ZIR" secondAttribute="trailing" type="default" id="RSf-Q3-oLi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="k7l-YG-0Qt"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ssD-mz-6Wu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="997" y="950"/>
+        </scene>
+        <!--Create Timeline View Controller - Title-->
         <scene sceneID="6b6-jM-Kyv">
             <objects>
-                <viewController id="JsJ-zy-Qyy" sceneMemberID="viewController">
+                <viewController id="JsJ-zy-Qyy" customClass="CreateTimelineViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LrL-fM-Xdb">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -85,6 +113,9 @@
                                 <state key="highlighted" image="Takephoto-tap-306x186.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onTakePhoto:" destination="JsJ-zy-Qyy" eventType="touchUpInside" id="zbc-8R-yqC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jcd-p2-sDV">
                                 <constraints>
@@ -125,11 +156,86 @@
                             <constraint firstItem="b6g-4r-3hs" firstAttribute="trailing" secondItem="KzO-zu-dpX" secondAttribute="trailing" type="default" id="wg3-Si-ANx"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="DfT-d5-C8c"/>
+                    <navigationItem key="navigationItem" title="Title" id="lvh-H1-aox"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ser-GI-Arf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1114" y="862"/>
+            <point key="canvasLocation" x="66" y="950"/>
+        </scene>
+        <!--Publishing Photo View Controller - Title-->
+        <scene sceneID="ipf-Lq-agk">
+            <objects>
+                <viewController storyboardIdentifier="PublishingPhotoViewController" id="mif-WK-d9N" customClass="PublishingPhotoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JPw-7I-ObG">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k07-Gw-Nvd">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="2aY-4M-pqA"/>
+                                    <constraint firstAttribute="width" constant="300" id="dVh-Yq-RzM"/>
+                                </constraints>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Reh-23-N8W">
+                                <items>
+                                    <navigationItem title="Title" id="PcM-nr-oRs">
+                                        <barButtonItem key="leftBarButtonItem" title="重拍" id="nPW-bQ-JOo"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rf8-vc-61q">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyS-4N-Rc1">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="发布">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqH-9Y-SdJ">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="时间轴类型">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="k07-Gw-Nvd" firstAttribute="trailing" secondItem="rf8-vc-61q" secondAttribute="trailing" type="default" id="2Yx-ri-BYq"/>
+                            <constraint firstAttribute="bottom" secondItem="rf8-vc-61q" secondAttribute="bottom" constant="163" id="69Y-1u-DTs"/>
+                            <constraint firstItem="k07-Gw-Nvd" firstAttribute="top" secondItem="JPw-7I-ObG" secondAttribute="top" constant="50" id="8sp-cl-z3s"/>
+                            <constraint firstAttribute="bottom" secondItem="dqH-9Y-SdJ" secondAttribute="bottom" constant="106" id="Bis-QY-Rrr"/>
+                            <constraint firstItem="LyS-4N-Rc1" firstAttribute="trailing" secondItem="dqH-9Y-SdJ" secondAttribute="trailing" type="default" id="Hvp-DS-KNG"/>
+                            <constraint firstItem="dqH-9Y-SdJ" firstAttribute="leading" secondItem="rf8-vc-61q" secondAttribute="leading" type="default" id="MJt-4g-9cq"/>
+                            <constraint firstItem="Reh-23-N8W" firstAttribute="leading" secondItem="JPw-7I-ObG" secondAttribute="leading" type="default" id="Nx7-iF-thm"/>
+                            <constraint firstAttribute="bottom" secondItem="LyS-4N-Rc1" secondAttribute="bottom" constant="29" id="PEk-sR-4aU"/>
+                            <constraint firstItem="k07-Gw-Nvd" firstAttribute="leading" secondItem="JPw-7I-ObG" secondAttribute="leading" constant="8" id="To2-4I-eKr"/>
+                            <constraint firstItem="rf8-vc-61q" firstAttribute="leading" secondItem="k07-Gw-Nvd" secondAttribute="leading" type="default" id="W29-3m-C64"/>
+                            <constraint firstItem="dqH-9Y-SdJ" firstAttribute="leading" secondItem="LyS-4N-Rc1" secondAttribute="leading" type="default" id="kPl-z1-5IF"/>
+                            <constraint firstItem="dqH-9Y-SdJ" firstAttribute="trailing" secondItem="rf8-vc-61q" secondAttribute="trailing" type="default" id="kgU-fV-Xcm"/>
+                            <constraint firstItem="Reh-23-N8W" firstAttribute="trailing" secondItem="JPw-7I-ObG" secondAttribute="trailing" type="default" id="u0K-Lb-nNa"/>
+                            <constraint firstItem="Reh-23-N8W" firstAttribute="top" secondItem="JPw-7I-ObG" secondAttribute="top" type="default" id="w0Z-Y6-cIe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="dvs-Fr-ORu"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="imageView" destination="k07-Gw-Nvd" id="Kw5-ZH-Ogi"/>
+                        <outlet property="textEditDesc" destination="rf8-vc-61q" id="F9J-gw-cL8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lg0-Ct-yrW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="551" y="950"/>
         </scene>
         <!--Navigation Controller - Create-->
         <scene sceneID="h9Y-CI-CFr">
@@ -148,7 +254,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7jp-ka-gYJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="652" y="153"/>
+            <point key="canvasLocation" x="-396" y="241"/>
         </scene>
         <!--Navigation Controller - TimeLine-->
         <scene sceneID="oKc-b4-usA">
@@ -168,7 +274,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="563-ev-ehA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="652" y="862"/>
+            <point key="canvasLocation" x="-396" y="950"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="duy-OG-mEa">
@@ -188,7 +294,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cKp-3a-ySf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="126" y="507"/>
+            <point key="canvasLocation" x="-922" y="595"/>
         </scene>
     </scenes>
     <resources>
@@ -203,14 +309,25 @@
         <image name="Text-tap-306x186.png" width="300" height="182"/>
     </resources>
     <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+        <class className="CreateTimelineViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CreateTimelineViewController.h"/>
             <relationships>
                 <relationship kind="action" name="onTakePhoto:"/>
             </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="PublishingPhotoViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PublishingPhotoViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="onPublishPhoto:"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="textEditDesc" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

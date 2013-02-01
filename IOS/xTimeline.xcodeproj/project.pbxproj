@@ -28,6 +28,8 @@
 		12F1F06016BBEEE900E267DB /* Takevideo-tap-306x186.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F1F05816BBEEE900E267DB /* Takevideo-tap-306x186.png */; };
 		12F1F06116BBEEE900E267DB /* Text-normal-306x186.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F1F05916BBEEE900E267DB /* Text-normal-306x186.png */; };
 		12F1F06216BBEEE900E267DB /* Text-tap-306x186.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F1F05A16BBEEE900E267DB /* Text-tap-306x186.png */; };
+		12F1F06516BC00D000E267DB /* CreateTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F1F06416BC00D000E267DB /* CreateTimelineViewController.m */; };
+		12F1F06816BC021400E267DB /* PublishingPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F1F06716BC021400E267DB /* PublishingPhotoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +59,10 @@
 		12F1F05816BBEEE900E267DB /* Takevideo-tap-306x186.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Takevideo-tap-306x186.png"; sourceTree = "<group>"; };
 		12F1F05916BBEEE900E267DB /* Text-normal-306x186.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Text-normal-306x186.png"; sourceTree = "<group>"; };
 		12F1F05A16BBEEE900E267DB /* Text-tap-306x186.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Text-tap-306x186.png"; sourceTree = "<group>"; };
+		12F1F06316BC00D000E267DB /* CreateTimelineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateTimelineViewController.h; sourceTree = "<group>"; };
+		12F1F06416BC00D000E267DB /* CreateTimelineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateTimelineViewController.m; sourceTree = "<group>"; };
+		12F1F06616BC021300E267DB /* PublishingPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublishingPhotoViewController.h; sourceTree = "<group>"; };
+		12F1F06716BC021400E267DB /* PublishingPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublishingPhotoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,10 @@
 				12BBFDF816B137E300D091F1 /* ViewController.h */,
 				12BBFDF916B137E300D091F1 /* ViewController.m */,
 				12BBFDE116B137E200D091F1 /* Supporting Files */,
+				12F1F06316BC00D000E267DB /* CreateTimelineViewController.h */,
+				12F1F06416BC00D000E267DB /* CreateTimelineViewController.m */,
+				12F1F06616BC021300E267DB /* PublishingPhotoViewController.h */,
+				12F1F06716BC021400E267DB /* PublishingPhotoViewController.m */,
 			);
 			path = xTimeline;
 			sourceTree = "<group>";
@@ -216,6 +226,8 @@
 				12BBFDE716B137E200D091F1 /* main.m in Sources */,
 				12BBFDEB16B137E200D091F1 /* AppDelegate.m in Sources */,
 				12BBFDFA16B137E300D091F1 /* ViewController.m in Sources */,
+				12F1F06516BC00D000E267DB /* CreateTimelineViewController.m in Sources */,
+				12F1F06816BC021400E267DB /* PublishingPhotoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
