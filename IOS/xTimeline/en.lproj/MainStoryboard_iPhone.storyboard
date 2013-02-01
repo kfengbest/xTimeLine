@@ -12,14 +12,17 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Img-guide-496x602.png" translatesAutoresizingMaskIntoConstraints="NO" id="LjP-Vq-7Pb"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Img-guide-496x602.png" translatesAutoresizingMaskIntoConstraints="NO" id="LjP-Vq-7Pb">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="302" id="3ey-14-qY5"/>
+                                    <constraint firstAttribute="width" constant="248" id="9Hk-1x-2HB"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="LjP-Vq-7Pb" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="GkO-G1-SaJ"/>
-                            <constraint firstItem="LjP-Vq-7Pb" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="H6d-2r-t2h"/>
-                            <constraint firstItem="LjP-Vq-7Pb" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="QyP-cY-UT9"/>
-                            <constraint firstItem="LjP-Vq-7Pb" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="dew-ZM-xLK"/>
+                            <constraint firstItem="LjP-Vq-7Pb" firstAttribute="top" secondItem="3" secondAttribute="top" constant="33" id="77o-0H-Tvf"/>
+                            <constraint firstItem="LjP-Vq-7Pb" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="37" id="7b5-PG-cx0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uns-hA-Wf1">
@@ -96,6 +99,14 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="选择一种方式来创建你的时间轴" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64b-Yt-FPV">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="IMT-au-3Wv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.58431375026702881" green="0.80000007152557373" blue="0.80000007152557373" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -103,6 +114,9 @@
                             <constraint firstItem="Jcd-p2-sDV" firstAttribute="trailing" secondItem="lXi-Nb-NZi" secondAttribute="trailing" type="default" id="516-ST-zHR"/>
                             <constraint firstItem="b6g-4r-3hs" firstAttribute="leading" secondItem="KzO-zu-dpX" secondAttribute="leading" type="default" id="6Uc-w1-fyQ"/>
                             <constraint firstItem="KzO-zu-dpX" firstAttribute="leading" secondItem="LrL-fM-Xdb" secondAttribute="leading" constant="4" id="837-Rl-1tk"/>
+                            <constraint firstItem="64b-Yt-FPV" firstAttribute="top" secondItem="LrL-fM-Xdb" secondAttribute="top" constant="20" symbolic="YES" type="default" id="EF8-Qu-l6h"/>
+                            <constraint firstItem="64b-Yt-FPV" firstAttribute="leading" secondItem="LrL-fM-Xdb" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Eb7-iv-cTs"/>
+                            <constraint firstAttribute="trailing" secondItem="64b-Yt-FPV" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="FHo-DN-Dwl"/>
                             <constraint firstAttribute="trailing" secondItem="lXi-Nb-NZi" secondAttribute="trailing" constant="5" id="Ree-9j-Snb"/>
                             <constraint firstItem="Jcd-p2-sDV" firstAttribute="top" secondItem="lXi-Nb-NZi" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="WVV-hn-jrg"/>
                             <constraint firstItem="lXi-Nb-NZi" firstAttribute="top" secondItem="LrL-fM-Xdb" secondAttribute="top" constant="90" id="awU-uJ-y6O"/>
