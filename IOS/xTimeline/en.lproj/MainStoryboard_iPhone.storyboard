@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12A178q" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="el9-9B-egT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12A178q" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="UL6-yr-HlJ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
@@ -9,9 +9,18 @@
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Img-guide-496x602.png" translatesAutoresizingMaskIntoConstraints="NO" id="LjP-Vq-7Pb"/>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LjP-Vq-7Pb" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="GkO-G1-SaJ"/>
+                            <constraint firstItem="LjP-Vq-7Pb" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="H6d-2r-t2h"/>
+                            <constraint firstItem="LjP-Vq-7Pb" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="QyP-cY-UT9"/>
+                            <constraint firstItem="LjP-Vq-7Pb" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="dew-ZM-xLK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uns-hA-Wf1">
                         <barButtonItem key="rightBarButtonItem" title="Photo" id="9w8-YL-TAh">
@@ -23,12 +32,96 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="578" y="51"/>
+            <point key="canvasLocation" x="1114" y="153"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--View Controller-->
+        <scene sceneID="6b6-jM-Kyv">
+            <objects>
+                <viewController id="JsJ-zy-Qyy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LrL-fM-Xdb">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KzO-zu-dpX">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="BaD-Ja-6ak"/>
+                                    <constraint firstAttribute="width" constant="153" id="eQE-Sg-hBp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="Text-normal-306x186.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="Text-tap-306x186.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXi-Nb-NZi">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="153" id="82V-Cs-yP5"/>
+                                    <constraint firstAttribute="height" constant="92" id="Oz6-If-TI8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="Album-normal-306x186.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="Album-tap-306x186.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6g-4r-3hs">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="srE-fU-3GF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="Takephoto-normal-306x186.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="Takephoto-tap-306x186.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jcd-p2-sDV">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="VbR-j4-Ewp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="Takevideo-normal-306x186.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="Takevideo-tap-306x186.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lXi-Nb-NZi" firstAttribute="top" secondItem="LrL-fM-Xdb" secondAttribute="top" constant="129" id="4RX-Vg-GCt"/>
+                            <constraint firstItem="Jcd-p2-sDV" firstAttribute="leading" secondItem="lXi-Nb-NZi" secondAttribute="leading" type="default" id="4qq-Wk-1Rk"/>
+                            <constraint firstItem="Jcd-p2-sDV" firstAttribute="trailing" secondItem="lXi-Nb-NZi" secondAttribute="trailing" type="default" id="516-ST-zHR"/>
+                            <constraint firstItem="b6g-4r-3hs" firstAttribute="leading" secondItem="KzO-zu-dpX" secondAttribute="leading" type="default" id="6Uc-w1-fyQ"/>
+                            <constraint firstItem="KzO-zu-dpX" firstAttribute="leading" secondItem="LrL-fM-Xdb" secondAttribute="leading" constant="4" id="837-Rl-1tk"/>
+                            <constraint firstItem="KzO-zu-dpX" firstAttribute="top" secondItem="LrL-fM-Xdb" secondAttribute="top" constant="130" id="QOd-Ia-nzi"/>
+                            <constraint firstAttribute="trailing" secondItem="Jcd-p2-sDV" secondAttribute="trailing" constant="5" id="TlN-98-78a"/>
+                            <constraint firstItem="Jcd-p2-sDV" firstAttribute="top" secondItem="lXi-Nb-NZi" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="WVV-hn-jrg"/>
+                            <constraint firstItem="b6g-4r-3hs" firstAttribute="top" secondItem="KzO-zu-dpX" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ecB-XN-meu"/>
+                            <constraint firstItem="b6g-4r-3hs" firstAttribute="trailing" secondItem="KzO-zu-dpX" secondAttribute="trailing" type="default" id="wg3-Si-ANx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DfT-d5-C8c"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ser-GI-Arf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1114" y="862"/>
+        </scene>
+        <!--Navigation Controller - Create-->
         <scene sceneID="h9Y-CI-CFr">
             <objects>
                 <navigationController id="el9-9B-egT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Create" id="pdZ-8m-vBJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IKY-vi-bZc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -41,9 +134,69 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7jp-ka-gYJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="36" y="719"/>
+            <point key="canvasLocation" x="652" y="153"/>
+        </scene>
+        <!--Navigation Controller - TimeLine-->
+        <scene sceneID="oKc-b4-usA">
+            <objects>
+                <navigationController id="HQr-fO-iH2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="TimeLine" id="56L-E0-Eak"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4eh-c8-P95">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JsJ-zy-Qyy" kind="relationship" relationship="rootViewController" id="xMF-wb-1lR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="563-ev-ehA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="652" y="862"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="duy-OG-mEa">
+            <objects>
+                <tabBarController id="UL6-yr-HlJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="bQi-yE-Fia">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="el9-9B-egT" kind="relationship" relationship="viewControllers" id="nTN-oU-e8v"/>
+                        <segue destination="HQr-fO-iH2" kind="relationship" relationship="viewControllers" id="1TQ-gl-IBq"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cKp-3a-ySf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="126" y="507"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Album-normal-306x186.png" width="300" height="182"/>
+        <image name="Album-tap-306x186.png" width="300" height="182"/>
+        <image name="Img-guide-496x602.png" width="247" height="300"/>
+        <image name="Takephoto-normal-306x186.png" width="300" height="182"/>
+        <image name="Takephoto-tap-306x186.png" width="300" height="182"/>
+        <image name="Takevideo-normal-306x186.png" width="300" height="182"/>
+        <image name="Takevideo-tap-306x186.png" width="300" height="182"/>
+        <image name="Text-normal-306x186.png" width="300" height="182"/>
+        <image name="Text-tap-306x186.png" width="300" height="182"/>
+    </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="onTakePhoto:"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

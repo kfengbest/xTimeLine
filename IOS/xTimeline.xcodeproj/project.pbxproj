@@ -19,6 +19,15 @@
 		12BBFDF416B137E300D091F1 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12BBFDF216B137E300D091F1 /* MainStoryboard_iPhone.storyboard */; };
 		12BBFDF716B137E300D091F1 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12BBFDF516B137E300D091F1 /* MainStoryboard_iPad.storyboard */; };
 		12BBFDFA16B137E300D091F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12BBFDF916B137E300D091F1 /* ViewController.m */; };
+		12F1F05216BBEEAA00E267DB /* Img-guide-496x602.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F1F05116BBEEAA00E267DB /* Img-guide-496x602.png */; };
+		12F1F05B16BBEEE900E267DB /* Album-normal-306x186.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F1F05316BBEEE800E267DB /* Album-normal-306x186.png */; };
+		12F1F05C16BBEEE900E267DB /* Album-tap-306x186.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F1F05416BBEEE800E267DB /* Album-tap-306x186.png */; };
+		12F1F05D16BBEEE900E267DB /* Takephoto-normal-306x186.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F1F05516BBEEE900E267DB /* Takephoto-normal-306x186.png */; };
+		12F1F05E16BBEEE900E267DB /* Takephoto-tap-306x186.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F1F05616BBEEE900E267DB /* Takephoto-tap-306x186.png */; };
+		12F1F05F16BBEEE900E267DB /* Takevideo-normal-306x186.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F1F05716BBEEE900E267DB /* Takevideo-normal-306x186.png */; };
+		12F1F06016BBEEE900E267DB /* Takevideo-tap-306x186.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F1F05816BBEEE900E267DB /* Takevideo-tap-306x186.png */; };
+		12F1F06116BBEEE900E267DB /* Text-normal-306x186.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F1F05916BBEEE900E267DB /* Text-normal-306x186.png */; };
+		12F1F06216BBEEE900E267DB /* Text-tap-306x186.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F1F05A16BBEEE900E267DB /* Text-tap-306x186.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +48,15 @@
 		12BBFDF616B137E300D091F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		12BBFDF816B137E300D091F1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		12BBFDF916B137E300D091F1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		12F1F05116BBEEAA00E267DB /* Img-guide-496x602.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Img-guide-496x602.png"; sourceTree = "<group>"; };
+		12F1F05316BBEEE800E267DB /* Album-normal-306x186.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Album-normal-306x186.png"; sourceTree = "<group>"; };
+		12F1F05416BBEEE800E267DB /* Album-tap-306x186.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Album-tap-306x186.png"; sourceTree = "<group>"; };
+		12F1F05516BBEEE900E267DB /* Takephoto-normal-306x186.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Takephoto-normal-306x186.png"; sourceTree = "<group>"; };
+		12F1F05616BBEEE900E267DB /* Takephoto-tap-306x186.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Takephoto-tap-306x186.png"; sourceTree = "<group>"; };
+		12F1F05716BBEEE900E267DB /* Takevideo-normal-306x186.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Takevideo-normal-306x186.png"; sourceTree = "<group>"; };
+		12F1F05816BBEEE900E267DB /* Takevideo-tap-306x186.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Takevideo-tap-306x186.png"; sourceTree = "<group>"; };
+		12F1F05916BBEEE900E267DB /* Text-normal-306x186.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Text-normal-306x186.png"; sourceTree = "<group>"; };
+		12F1F05A16BBEEE900E267DB /* Text-tap-306x186.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Text-tap-306x186.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +117,15 @@
 		12BBFDE116B137E200D091F1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				12F1F05316BBEEE800E267DB /* Album-normal-306x186.png */,
+				12F1F05416BBEEE800E267DB /* Album-tap-306x186.png */,
+				12F1F05516BBEEE900E267DB /* Takephoto-normal-306x186.png */,
+				12F1F05616BBEEE900E267DB /* Takephoto-tap-306x186.png */,
+				12F1F05716BBEEE900E267DB /* Takevideo-normal-306x186.png */,
+				12F1F05816BBEEE900E267DB /* Takevideo-tap-306x186.png */,
+				12F1F05916BBEEE900E267DB /* Text-normal-306x186.png */,
+				12F1F05A16BBEEE900E267DB /* Text-tap-306x186.png */,
+				12F1F05116BBEEAA00E267DB /* Img-guide-496x602.png */,
 				12BBFDE216B137E200D091F1 /* xTimeline-Info.plist */,
 				12BBFDE316B137E200D091F1 /* InfoPlist.strings */,
 				12BBFDE616B137E200D091F1 /* main.m */,
@@ -167,6 +194,15 @@
 				12BBFDF116B137E300D091F1 /* Default-568h@2x.png in Resources */,
 				12BBFDF416B137E300D091F1 /* MainStoryboard_iPhone.storyboard in Resources */,
 				12BBFDF716B137E300D091F1 /* MainStoryboard_iPad.storyboard in Resources */,
+				12F1F05216BBEEAA00E267DB /* Img-guide-496x602.png in Resources */,
+				12F1F05B16BBEEE900E267DB /* Album-normal-306x186.png in Resources */,
+				12F1F05C16BBEEE900E267DB /* Album-tap-306x186.png in Resources */,
+				12F1F05D16BBEEE900E267DB /* Takephoto-normal-306x186.png in Resources */,
+				12F1F05E16BBEEE900E267DB /* Takephoto-tap-306x186.png in Resources */,
+				12F1F05F16BBEEE900E267DB /* Takevideo-normal-306x186.png in Resources */,
+				12F1F06016BBEEE900E267DB /* Takevideo-tap-306x186.png in Resources */,
+				12F1F06116BBEEE900E267DB /* Text-normal-306x186.png in Resources */,
+				12F1F06216BBEEE900E267DB /* Text-tap-306x186.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
