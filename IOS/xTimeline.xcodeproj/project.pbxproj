@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12A9B07616DCAF4B00F87853 /* SnapshotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A9B07516DCAF4B00F87853 /* SnapshotCell.m */; };
 		12BBFDDB16B137E200D091F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12BBFDDA16B137E200D091F1 /* UIKit.framework */; };
 		12BBFDDD16B137E200D091F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12BBFDDC16B137E200D091F1 /* Foundation.framework */; };
 		12BBFDDF16B137E200D091F1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12BBFDDE16B137E200D091F1 /* CoreGraphics.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12A9B07416DCAF4B00F87853 /* SnapshotCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapshotCell.h; sourceTree = "<group>"; };
+		12A9B07516DCAF4B00F87853 /* SnapshotCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnapshotCell.m; sourceTree = "<group>"; };
 		12BBFDD616B137E200D091F1 /* xTimeline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xTimeline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12BBFDDA16B137E200D091F1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		12BBFDDC16B137E200D091F1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -135,6 +138,8 @@
 				12D1A94316BC9B1600A7600F /* Snapshot.m */,
 				12D1A94516BC9B3000A7600F /* Timeline.h */,
 				12D1A94616BC9B3000A7600F /* Timeline.m */,
+				12A9B07416DCAF4B00F87853 /* SnapshotCell.h */,
+				12A9B07516DCAF4B00F87853 /* SnapshotCell.m */,
 			);
 			path = xTimeline;
 			sourceTree = "<group>";
@@ -246,6 +251,7 @@
 				12D1A94016BC0EF800A7600F /* TimelineViewerViewController.m in Sources */,
 				12D1A94416BC9B1600A7600F /* Snapshot.m in Sources */,
 				12D1A94716BC9B3000A7600F /* Timeline.m in Sources */,
+				12A9B07616DCAF4B00F87853 /* SnapshotCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

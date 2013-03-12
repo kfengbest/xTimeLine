@@ -20,4 +20,6 @@
 -(void) addSnapshot:(Snapshot*) obj;
 -(void) removeSnapshot:(Snapshot*) obj;
 
++(Timeline *)getInstance;
+
 @end

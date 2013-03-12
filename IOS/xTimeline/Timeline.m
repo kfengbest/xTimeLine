@@ -11,6 +11,9 @@
 @implementation Timeline
 @synthesize snapshots;
 
+static Timeline * instance = nil;
+
+
 - (id)init
 {
     self = [super init];
@@ -29,6 +32,14 @@
 -(void) removeSnapshot:(Snapshot*) obj
 {
     [self.snapshots removeObject:obj];
+}
+
++(Timeline *)getInstance
+{
+    if (instance == nil) {
+        [[self alloc] init];
+    }
+    return instance;
 }
 
 @end

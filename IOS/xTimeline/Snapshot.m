@@ -12,5 +12,4 @@
 @synthesize image, description,date;
 
 
-
 @end
